@@ -11,16 +11,12 @@ import static by.milavitsky.homework.task1.runner.RunnerTask7.runTask7;
 import static by.milavitsky.homework.task1.runner.RunnerTask8.runTask8;
 import static by.milavitsky.homework.task1.runner.RunnerTask9.runTask9;
 
-
-import java.util.Scanner;
-
 public class Main {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-
+        System.out.println(runTask10(0, 10, 1));
+        //System.out.println(runTask8(2));
         /*//-----------------------------1
         System.out.println("Задание 1");
         System.out.println("Введите число ");// стоит ли делать сканнер, хотя в задании не сказано?

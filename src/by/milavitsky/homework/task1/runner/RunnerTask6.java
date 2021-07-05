@@ -9,7 +9,7 @@ import static by.milavitsky.homework.task1.validation.Validator.isInteger;
 import static by.milavitsky.homework.task1.validation.Validator.isValuePositive;
 
 public class RunnerTask6 {
-    public static HashMap runTask6(int time) {
+    public static String runTask6(int time) {
         if (!isInteger(time) || !isValuePositive(time)) {
             showMessage("Incorrect value or negative");
             return null;
@@ -19,11 +19,7 @@ public class RunnerTask6 {
         String hours = String.valueOf(arrayTime[1]);
         String minutes = String.valueOf(arrayTime[2]);
         String seconds = String.valueOf(arrayTime[3]);
-        HashMap<String, String> timeAll = new HashMap<String, String>();
-        timeAll.put("Days", day);
-        timeAll.put("Hours", hours);
-        timeAll.put("Minutes", minutes);
-        timeAll.put("Seconds", seconds);
-        return timeAll;
+        String resultOfTime = "Day " + day + " hours " + hours + " minutes " + minutes + " seconds " + seconds;
+        return resultOfTime;
     }
 }

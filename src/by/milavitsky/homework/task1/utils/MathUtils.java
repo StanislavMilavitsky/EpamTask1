@@ -73,7 +73,7 @@ public class MathUtils {
     }
 
 
-    public static double circumference(int radius){
+    public static double circumferenceCalculation(int radius){
         try {
             if (isNull(radius) || !isValuePositive(radius)) {
                 throw new IncorrectValueException("Must be positive");
